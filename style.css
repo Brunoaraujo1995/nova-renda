@@ -1,0 +1,367 @@
+@charset "UTF-8";
+/*
+pequenas telas até 600px
+celular; 600px a 768x
+tablet 768 ate 992 
+dekstop 992 ate 1200
+grandes acima de 1200
+
+
+
+
+
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    
+}
+body {
+    background-color: #030916;
+    
+}
+
+
+header {
+    height: 200px;
+    padding: 30px;
+    margin-bottom: 350px;
+  
+}
+.minha-foto {
+    padding: 30px;
+}
+
+header p {
+    
+    display: block;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    text-align:center;
+    width: 90%;
+    line-height: 26px;
+   
+
+
+}
+
+.logo-Oficial{
+   
+    width: 150px;
+    height: 50px;
+}
+
+.minha-foto {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+}
+
+/* SLIDE  ================================================================================================ */
+#wrapper{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.slide-wrapper {
+    display: flex;
+    flex-direction: column; /*QUANDO se tem - flex direction column - justify-content alinha na VERTICAL se for row horizontal*/
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+.slide-list {
+    display: flex;
+
+}
+
+.slide-item {
+    flex-shrink: 0;
+    padding: 0 10px;
+    width: 90vw;
+    cursor: grab;
+    
+}
+
+.slide-content {
+    position: relative;
+    
+    
+}
+
+.slide-image {
+    width: 100%;
+   
+}
+
+.slide-description {
+    color: white;
+    padding: 30px;
+    background: linear-gradient( to top,#0000009c, transparent);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+.slide-description h3 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    
+}
+.slide-description p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.slide-nav-button {
+    position: absolute;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    z-index: 1;
+
+}
+
+.slide-nav-previous {
+    left: 20px;
+}
+.slide-nav-next {
+    right: 20px;
+}
+
+.slide-controls {
+    margin: 30px auto 30px;
+    
+}
+
+.slide-control-button {
+    background: transparent;
+    cursor: pointer;
+    color: white;    
+    font-size:16px;
+    margin: 0 5px;
+}
+
+
+.slide-control-button.active {
+    color: #cd8cf5;
+}
+
+
+@media screen and (max-width: 768px) {
+    .slide-description {
+        padding: 15px;
+    }
+
+    .slide-description h3 {
+        font-size: 26px;
+        top:0;
+       
+    }
+
+    .slide-description p {
+        display: none;
+    }
+
+    .slide-control {
+        margin: 15px auto;
+    }
+
+    .slide-control-button {
+      font-size: 14px;
+    }
+
+    .slide-nav-button {
+       margin-top: -70px;
+       font-size: 28px;
+    
+    }
+    
+    .slide-nav-previous {
+        left: 10px;
+    }
+    .slide-nav-next {
+        right: 10px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TEMPLATE ul li ================================================================================================*/
+
+#article-container h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#lista-container {
+    display: flex;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+.template {
+   
+    
+}
+
+.item-artigo {
+    width: 250px;
+    height: 450px;
+    background-color: white;
+    border-radius:5px;
+    
+    margin: 20px;
+   
+}
+
+.template button {
+    color: white;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 18px;
+    width: 80%;
+    font-weight: bolder;
+    background-color: rgb(0, 183, 255);
+    border-radius: 5px;
+    transition: .5s;
+    
+    
+}
+.template P {
+    padding:10px;
+}
+
+
+.template button:hover{
+    background-color: rgb(2, 122, 170);
+    cursor: pointer;
+}
+
+.item-artigo .texto {
+    
+    color:#030916;
+    
+  
+}
+
+
+.imagem-artigo {
+width: 250px;
+height: 300px;
+
+}
+
+#lista-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    
+}
+
+
+
+
+
+
+
+/* ================================================================================ */
+
+
+footer {
+background-color: #00030a;
+width: 100%;
+
+
+}
+
+footer img {
+    display: block;
+    margin: auto;
+    width: 200px;
+}
+
+footer p {
+    color: rgb(161, 161, 161);
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+
+
+}
+
+
+/* pequenas telas */
+@media screen and (max-width: 600px)  { 
+     
+}
+
+/*telas celular*/
+@media screen and (min-width: 600px)   {   
+    header p {
+    
+        display: block;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+        text-align:center;
+        width: 400px;
+        line-height: 26px;
+        margin: auto;
+        
+    
+    } 
+}
+
+@media screen and (min-width: 992px) {
+
+    #article-container {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 50px;
+        background-color: rgb(11, 30, 53);
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+    header p {
+    
+        display: block;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+        text-align:center;
+        width: 400px;
+        line-height: 26px;
+        margin: auto;
+        
+    
+    }
+    
+
+}

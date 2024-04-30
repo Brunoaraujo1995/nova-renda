@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Nova Renda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo-Oficial" src="imagem/logo of.png" alt="Logo oficial do site renda extra">
+        <img class="minha-foto" src="imagem/logo.png" alt="foto de perfil do criador do site">
+        <p>Olá seja bem vindo ao site Nova Renda eu me chamo Bruno Araújo e estou aqui para ajudar você a alcançar sua nova renda mensal. Abaixo temos os primeiros passos para sua nova fase de vida onde você finalmente vai colocar dinheiro no bolso e vê o mundo online de forma diferente. </p>
+    </header>
+
+     <!-- banners com loop infinito -->
+    <div id="wrapper">
+        <div class="slide-wrapper" data-slide="wrapper"> 
+            <button class="slide-nav-button slide-nav-previous fas fa-chevron-left" data-slide="nav-previous-button"></button> 
+            <button class="slide-nav-button slide-nav-next fas fa-chevron-right" data-slide="nav-next-button"></button>
+            <div class="slide-list" data-slide="list">
+
+                
+
+                <div class="slide-item" data-slide="item" data-index="0">
+                    <div class="slide-content">
+                        <img class="slide-image" src="slide/slide-1.png" alt="naruto">
+                        <div class="slide-description">
+                            <h3>Dia das Mães</h3>
+                            <p><strong>Preseteie</strong> sua mãe com um presente incrível!</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="slide-item" data-slide="item" data-index="1">
+                    <a href="https://go.hotmart.com/A92781560Y" target="_blank">
+                        <div class="slide-content">
+                                <img class="slide-image" src="slide/slide-2.png" alt="Sukuna">
+                            <div class="slide-description">
+                                <h3>Canva</h3>
+                                <p>Mesmo sem noção de <strong>DESIGN</strong></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="slide-item" data-slide="item" data-index="2">
+                    <a href="https://go.hotmart.com/G92782643X" target="_blank">
+                    <div class="slide-content">
+                        <img class="slide-image" src="slide/slide-3.png" alt="Boruto">
+                        <div class="slide-description">
+                            <h3>ANALISTA FINANCEIRO</h3>
+                            <p>O Curso online de Analista Financeiro conta com <strong>certificado</strong> de conclusão de 25 horas</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+
+                    
+                 
+
+
+
+            </div>   
+              <div class="slide-controls" data-slide="constrols-wrapper">
+             
+              </div>
+        </div>
+    </div>
+ 
+    <!-- container de artigos     <img src="slide/slide-2.png" alt="jujustu">
+                        <img src="slide/slide-3.png" alt="boruto"> -->
+
+    <div id="article-container">
+        <h2 >Artigos</h2>
+        <ul id="lista-container">
+            <li class="template">
+                <div class="item-artigo">
+                    <img src="imgArtigo/design.png" alt="Capa do curso de designer gráfico" class="imagem-artigo">
+                    <button>DESIGN</button>
+                    <p class="texto">Curso de design grafico, como ganhar dinheiro com o básico</p>
+                </div>
+            </li>
+
+            <li class="template">
+                <div class="item-artigo">
+                    <img src="imgArtigo/landing.png" alt="Capa do curso de criação de landing pages" class="imagem-artigo">
+                    <BUTTON>LANDING PAGE</BUTTON> 
+                    <p class="texto">curso basico para criar renda extra com design grafico</p>
+                </div>
+            </li>
+
+            <li class="template">
+                <div class="item-artigo">
+                    <img src="imgArtigo/RMT.png" alt="Capa do curso de RMT ganhe jogando games" class="imagem-artigo">
+                    <button>RMT</button>
+                    <p class="texto">Curso RMT ganhe jogando!</p>
+                </div>
+            </li>
+
+            <li class="template">
+                <div class="item-artigo">
+                    <img src="imgArtigo/e-book.png" alt="Capa do curso de criação de e-book" class="imagem-artigo">
+                    <button>E-BOOK</button>
+                    <p class="texto">Curso crie seu E-book e fature.</p>
+                </div>
+            </li>
+
+            <li class="template">
+                <div class="item-artigo">
+                    <img src="imgArtigo/editor.png" alt="Curso de freelancer para editores de vídeos." class="imagem-artigo">
+                    <button>EDITOR</button>
+                    <p class="texto">Curso de freelancer para editores de vídeos.</p>
+                </div>
+            </li>
+
+            <li class="template">
+                <div class="item-artigo">
+                    <img src="imgArtigo/afiliado.png" alt="" class="imagem-artigo">
+                    <button>AFILIADO</button>
+                    <p class="texto">Curso afiliado primeira venda.</p>
+                </div>
+            </li>
+
+        </ul>
+
+
+    </div>
+
+   <footer>
+    <img src="imagem/logo of.png" alt="logo oficial do site renda extra">
+    <p>SÓ VAMOS DESCANSAR QUANDO VOCÊ TIVER SUA RENDA EXTRA</p>
+   </footer>
+    
+    <script src="script.js"></script>
+    <script>
+        initSlide({ autoPlay: true,
+        startAtIndex: 0,
+        timeInterval: 3000,})
+       
+    </script>
+    
+</body>
+</html>
