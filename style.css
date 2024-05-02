@@ -192,6 +192,18 @@ header p {
     
 }
 
+@media screen and (max-width: 1024px){
+
+    .slide-description {
+        display: none;
+    }
+
+    .slide-nav-button {
+        display: none;
+    }
+    
+}
+
 
 
 
